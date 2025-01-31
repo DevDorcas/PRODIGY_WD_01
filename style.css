@@ -1,0 +1,227 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        background: rgb(179, 102, 25);
+    }
+    
+    header {
+        background: rgb(128, 69, 7);
+        position: relative;
+    }
+    
+    header .devDorcas {
+        position: relative;
+        color: #000;
+        font-size: 30px;
+        text-decoration: none;
+        font-weight: 800;
+        letter-spacing: 1px;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .navbar nav {
+        display: flex;
+        align-items: center;
+        margin-left: 25rem;
+    }
+    
+    .navbar nav li {
+        list-style: none;
+        margin-left: 1rem;
+    }
+    
+    .navbar nav li a {
+        text-decoration: none;
+        color: #0a0b0b;
+        font-size: 18px;
+        padding: 10px 15px;
+        border-radius: 10px;
+        transition: all 0.4s ease-in;
+    }
+    
+    .navbar nav li a:hover {
+        background: white;
+    }
+    
+    .container {
+        max-width: 1400px;
+        padding: 0 20px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .content {
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .content h2 {
+        font-size: 35px;
+        font-family: "Poppins", sans-serif;
+        margin: 30px;
+    }
+    
+    .content span {
+        margin-left: 25px;
+    }
+    
+    .content p {
+        color: #0a0b0b;
+        line-height: 2;
+        margin: 5px;
+        margin-left: 30px;
+    }
+    
+    .content button {
+        display: block;
+        margin: 20px 30px;
+        width: 21%;
+        padding: 0.5rem 0;
+        cursor: pointer;
+        font-size: 1.2rem;
+        background: rgb(108, 59, 7);
+        color: aliceblue;
+        border: 1px solid #957b04;
+        border-radius: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .content button:hover {
+        background-color: #211c1c;
+    }
+    
+    .profile {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+    }
+    
+    .profile img {
+        width: 70vh;
+        height: 60vh;
+        border-radius: 10px;
+    }
+    
+    .Combo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .content .media-icons {
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        font-size: 1.9rem;
+        cursor: pointer;
+        margin: 20px;
+    }
+    
+    .content .media-icons i {
+        padding: 0.5rem;
+        color: rgb(6, 24, 18);
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .btn {
+        font-size: 1.2rem;
+        align-items: center;
+        cursor: pointer;
+        display: none;
+    }
+    
+    @media(max-width: 1240px) {
+        .container {
+            padding: 0 25px;
+        }
+        .content h2 {
+            font-size: 4rem;
+        }
+        .navbar nav li a {
+            font-size: 1rem;
+        }
+        .profile img {
+            width: 50vh;
+            height: 30vh;
+        }
+    }
+    
+    @media(max-width: 902px) {
+        .navbar .btn {
+            display: block;
+        }
+        .navbar nav {
+            position: fixed;
+            flex-direction: column;
+            min-width: 100%;
+            min-height: 50vh;
+            top: 0;
+            right: -100%;
+            background: rgba(75, 54, 8, 0.375);
+            align-items: center;
+            justify-content: center;
+        }
+        .navbar nav li {
+            margin: 1rem 2rem;
+            padding-bottom: 1rem;
+            width: 100%;
+        }
+        .close-btn {
+            position: absolute;
+            top: 0;
+            left: 90%;
+            margin: 25px;
+        }
+        .content {
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .content h2 {
+            font-size: 3.5rem;
+        }
+        .content button {
+            width: 50%;
+        }
+        .content .media-icons {
+            justify-content: space-evenly;
+            width: 100%;
+        }
+        .profile img {
+            width: 40vh;
+            height: 20vh;
+        }
+    }
+    
+    @media(max-width: 562px) {
+        .content h2 {
+            font-size: 2.5rem;
+        }
+    }
